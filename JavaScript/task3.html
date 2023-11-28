@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=\, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body style="background: url(https://img.freepik.com/free-vector/blue-watercolor-texture-design-background-vector_1055-8858.jpg);background-size: cover;">
+    <div style="display: flex; background-color: aqua; width: 30%; margin-left: 35%;margin-top: 10%; padding-left: 20px; border: 2px solid;">
+    <div style="margin: 20px;">
+        <h2>DATE</h2>
+        <input type="text" id="k1" size="4">
+        <h2>DAY</h2>
+        <input type="text" id="k2" size="4">
+        <h2>HOURS</h2>
+        <input type="text" id="k3" size="4">
+        <h2>FULL YEAR</h2>
+        <input type="text" id="k4" size="4">
+        </div>
+    <div style="margin: 20px;">
+        <h2>MILLISECONDS</h2>
+        <input type="text" id="k5" size="4">
+        <h2>MINUTES</h2>
+        <input type="text" id="k6" size="4">
+        <h2>TIME</h2>
+        <input type="text" id="k7" size="4">
+        <h2>MINUTES</h2>
+        <input type="text" id="k8" size="4">
+      
+    </div>
+    </div>
+    <script>
+    let a = new Date().getDate();
+        document.getElementById("k1").value=a;
+    let b = new Date().getDay();
+        document.getElementById("k2").value=b;
+    let c = new Date().getHours();
+        document.getElementById("k3").value=c;
+    let d = new Date().getFullYear();
+        document.getElementById("k4").value=d;
+    let e = new Date().getMilliseconds();
+        document.getElementById("k5").value=e;
+    let f = new Date().getMinutes();
+        document.getElementById("k6").value=f;
+    let g = new Date().getTime();
+        document.getElementById("k7").value=g;
+    let h = new Date().getMonth();
+        document.getElementById("k8").value=h;
+
+
+    </script>
+</body>
+</html>
