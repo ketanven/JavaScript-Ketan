@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <input type="number" name="" id="text">
+    <input type="number" name="" id="text2">
+    <button onclick="add()">buttom</button>
+    <input type="text" name="" id="label">
+    <p id="p1"></p>
+<button onclick="abc()">button</button>
+
+
+    <script>
+        let a = document.getElementById("text");
+        let b = document.getElementById("text2");
+        function add(){
+            let c =Number(text.value)+Number(text2.value);
+            document.getElementById("label").value= c;
+        }
+        function abc(){
+            let a = prompt("enter a")
+            document.getElementById("p1").innerHTML=a;
+            let b = prompt("enter a")
+            document.getElementById("p1").innerHTML=b;
+            let c=Number(a.value)+Number(b.value);
+            document.write(c)
+        }
+        // let          a=  prompt("enter a");
+        // let b=prompt("enter b");
+
+        // let c=(a+b);
+        // document.write(c)
+
+        
+        
+    </script>
+</body>
+</html>

@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    *{
+        margin: 0;
+        padding: 0;
+    }
+    #div{
+        height: auto;
+        width: 100%;
+        background-color: lightgreen;
+        display: flex;
+        flex-direction: row;
+        
+    }
+    #div2{
+        height: auto;
+        width: auto;
+        background-color: lightseagreen;
+        color: white;
+        text-align: center;
+        padding-top: 11%;
+    }
+    #total{
+        margin-top: 10%;
+     font-size: 120px;
+    }
+</style>
+<body>
+    <div id="div">
+        <form style="display: flex; flex-direction: row;width: 100%;">
+        <table border="2" style="height: fit-content;width: 100%">
+            <tr>
+                <th colspan="3">MONEY CALCULATOR</th>
+            </tr>
+            <tr>
+                <th>NOTES YOU HAVE</th>
+                <th>NO.OF NOTES YOU HAVE</th>
+                <th>TOTAL</th>
+            </tr>
+            <tr>
+                <th>
+                    <img src="https://paisaboltahai.rbi.org.in/images/2000-note-front.png" height="80px"alt="" id="two">
+                </th>
+                <th>
+                    <input type="number" style="height:70px;background:none;font-size: 30px; width: 30%;" id="k1" oninput="abc()">
+                </th>
+                <th id="k2" oninput="total()"></th>
+            </tr>
+            <tr>
+                <th>
+                    <img src="https://www.leftovercurrency.com/app/uploads/2017/03/500-indian-rupees-banknote-gandhi-red-fort-obverse-1.jpg" alt="" height="80px" id="five">
+                </th>
+                <th>
+                    <input type="number" style="height:70px;background:none;font-size: 30px; width: 30%;" id="k3" oninput="abc()">
+                </th>
+                <th id="k4" oninput="total()"></th>
+            </tr>
+            <tr>
+                <th>
+                    <img src="https://en.numista.com/catalogue/photos/inde/5e9621c69a6c22.03931792-original.jpg" alt="" height="80px" id="two2">
+                </th>
+                <th>
+                    <input type="number" style="height:70px;background:none;font-size: 30px; width: 30%;" id="k5" oninput="abc()">
+                </th>
+                <th id="k6"></th>
+            </tr>
+            <tr>
+                <th>
+                    <img src="https://cdn.zeebiz.com/sites/default/files/2018/07/19/46032-rs100noterbi.PNG" alt="" height="80px">
+                </th>
+                <th>
+                    <input type="number" style="height:70px;background:none;font-size: 30px; width: 30%;" id="k7" oninput="abc()">
+                </th>
+                <th id="k8"></th>
+            </tr>
+            <tr>
+                <th>
+                    <img src="https://en.numista.com/catalogue/photos/inde/626e32584340c1.09753964-original.jpg" alt="" height="80px">
+                </th>
+                <th>
+                    <input type="number" style="height:70px;background:none;font-size: 30px; width: 30%;" id="k9" oninput="abc()">
+                </th>
+                <th id="k10" ></th>
+            </tr>
+            <tr>
+                <th>
+                    <img src="https://www.numiscollection.com/upload/image/india-20-rupees--mahatma-gandhi---2019---unc-p-image-106102-grande.jpg" alt="" height="80px">
+                </th>
+                <th>
+                    <input type="number" style="height:70px;background:none;font-size: 30px; width: 30%;" id="k11" oninput="abc()">
+                </th>
+                <th id="k12"></th>
+            </tr>
+            <tr>
+                <th>
+                    <img src="https://www.foreigncurrencyandcoin.com/wp-content/uploads/2018/12/products-16450.jpg" alt="" height="80px">
+                </th>
+                <th>
+                    <input type="number" style="height:70px;background:none;font-size: 30px; width: 30%;" id="k13" oninput="abc()">
+                </th>
+                <th id="k14"></th>
+            </tr>
+        </table>
+        
+        
+        
+        <div id="div2">
+            <h1>TOTAL AMOUNT OF MONEY YOU HAVE :</h1>
+            <h1 id="total"></h1>
+            <input type="reset">
+        </div>
+    </form>
+    </div>
+
+
+    <script>
+        // let a = document.getElementById("k1");
+        // let b = document.getElementById("k3");
+        // let c = document.getElementById("k5");
+       
+        function abc(){
+        let two=2000;
+        let five=500;
+        let two2=200;
+        let one=100;
+        let five50=50;
+        let two20=20;
+        let ten=10;
+
+
+        let a1= two*Number(k1.value);
+        document.getElementById("k2").innerHTML=a1
+
+        let b1= five*Number(k3.value);
+        document.getElementById("k4").innerHTML=b1
+      
+        let b2= two2*Number(k5.value);
+        document.getElementById("k6").innerHTML=b2
+
+        let b3= one*Number(k7.value);
+        document.getElementById("k8").innerHTML=b3
+         
+        let b4= five50*Number(k9.value);
+        document.getElementById("k10").innerHTML=b4
+
+        let b5= two20*Number(k11.value);
+        document.getElementById("k12").innerHTML=b5
+
+        let b6= ten*Number(k13.value);
+        document.getElementById("k14").innerHTML=b6
+
+        let sum=a1+b1+b2+b3+b4+b5+b6;
+        document.getElementById("total").innerHTML="₹"+sum;
+
+        }
+
+    </script>
+</body>
+</html>

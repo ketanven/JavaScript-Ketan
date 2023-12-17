@@ -1,0 +1,373 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    *{
+        margin: 0;
+        padding: 0;
+    }
+    #table{
+        height: 400px;
+        width: 70%;
+        background-color: rgba(70, 251, 206, 0.541);
+    }
+</style>
+<body style="background-image:url(https://img.freepik.com/premium-photo/3d-render-clipboard-with-checklist-concept-project-management-isolated-purple-background_95505-349.jpg?w=740); background-size:  700px; margin-left: 20px; background-position: 200px;">
+    <div>
+        <h1 style="color: blueviolet; font-size: 40px; text-align: center; font-weight: bolder;">Create Your Own ToDO List</h1>
+        <table border="2" id="table">
+            <tr>
+                <th>Sr.no</th>
+                <th>Time</th>
+                <th>Activities</th>
+                <th>Add Others</th>
+            </tr>
+            <tr>
+                <th>01</th>
+                <th>Morning 7:00 am to 8:00 am</th>
+                <th >
+                    <select name="" style="width: 69%;"  id="select1" oninput="abc1()">
+                        <option value="Select option">Select Option</option>
+                        <option value="YOGA">YOGA</option>
+                        <option value="EXCERCISE">EXCERCISE</option>
+                        <option value="RUNNING">RUNNING</option>
+                        <option value="MORNING WALK">MORNING WALK</option>
+                        <option value="READING">READING</option>
+                        <option value="MORNING NEWS">MORNING NEWS</option>
+                        <option value="BREAKFAST">BREAKFAST</option>
+                        <option value="PHONE TIME">PHONE TIME</option>
+
+                    </select>
+                </th>
+                <th>
+                    Add By Own
+                    <input type="text" name="" id="own1">
+                    <button onclick="abc2()">ADD</button>
+                </th>
+            </tr>
+        
+            <tr>
+                <th>02</th>
+                <th>Morning 9:00 am to 10:00 am</th>
+                <th><select name="" id="select2" style="width: 69%;">
+                    <option value=" Select option">Select Option</option>
+                    <option value="TV TIME">TV TIME</option>
+                    <option value="NEWSPAPER TIME">NEWSPAPER TIME</option>
+                    <option value="DRIVE TO JOB/WORK">DRIVE TO JOB/WORK</option>
+                    <option value="SHOPPING">SHOPPING</option>
+                    <option value="BREAKFAST">BREAKFAST</option>
+                    <option value="PHONE TIME">PHONE TIME</option>
+
+                </select></th>
+                <th>
+                    Add By Own
+                    <input type="text" name="" id="own2">
+                    <button onclick="abc3()">ADD</button>                
+                </th>
+            </tr>
+            <tr>
+                <th>03</th>
+                <th>Morning 11:00 am to 12:00 pm </th>
+                <th>
+                    <select name="" id="select3" style="width: 69%;"oninput="abc1()">
+                        <option value="Select option">Select Option</option>
+                        <option value="OFFICE TIME">OFFICE TIME</option>
+                        <option value="WORK TIME">WORK TIME</option>
+                        <option value="CLEAR BACKLOGS">CLEAR BACKLOGS</option>
+                        <option value="MEETING">MEETING</option>
+                        <option value="BREAKFAST">BREAKFAST</option>
+                        <option value="PHONE TIME">PHONE TIME</option>
+
+                    </select>
+                </th>
+                <th>
+                    Add By Own
+                    <input type="text" name="" id="own3">
+                    <button onclick="abc4()">ADD</button>
+                </th>
+            </tr>
+            <tr>
+                <th>04</th>
+                <th>NOON 1:00 pm to 2:00 pm </th>
+                <th>
+                    <select name="" id="select4" style="width: 69%;"oninput="abc1()">
+                        <option value="Select option">Select Option</option>
+                        <option value="OFFICE TIME">OFFICE TIME</option>
+                        <option value="WORK TIME">WORK TIME</option>
+                        <option value="CLEAR BACKLOGS">CLEAR BACKLOGS</option>
+                        <option value="MEETING">MEETING</option>
+                        <option value="BREAKFAST">LUNCH</option>
+                        <option value="PHONE TIME">PHONE TIME</option>
+
+                    </select>
+                </th>
+                <th>
+                    Add By Own
+                    <input type="text" name="" id="own4">
+                    <button onclick="abc5()">ADD</button>
+                </th>
+            </tr>
+            <tr>
+                <th>05</th>
+                <th>NOON 3:00 pm to 4:00 pm </th>
+                <th>
+                    <select name="" id="select5" style="width: 69%;"oninput="abc1()">
+                        <option value="Select option">Select Option</option>
+                        <option value="MANAGEMENT TIME">MANAGEMENT TIME</option>
+                        <option value="WORK TIME">WORK TIME</option>
+                        <option value="ASSIGN NEW WORK">ASSIGN NEW WORK</option>
+                        <option value="MEETING">MEETING</option>
+                        <option value="SLEEP">SLEEP</option>
+                        <option value="PHONE TIME">PHONE TIME</option>
+
+                    </select>
+                </th>
+                <th>
+                    Add By Own
+                    <input type="text" name="" id="own5">
+                    <button onclick="abc6()">ADD</button>
+                                </th>
+            </tr>
+            <tr>
+                <th>06</th>
+                <th>AFTERNOON 5:00 pm to 6:00 pm </th>
+                <th>
+                    <select name="" id="select6" oninput="abc1()">
+                        <option value="Select option">Select Option</option>
+                        <option value="RETURN FROM JOB/WORK TIME">RETURN FROM JOB/WORK</option>
+                        <option value="WORK TIME">FAMILY TIME</option>
+                        <option value="CLEAR BACKLOGS">ASSIGN NEW WORK</option>
+                        <option value="MEETING">MEETING</option>
+                        <option value="BREAKFAST">SLEEP</option>
+                        <option value="PHONE TIME">PHONE TIME</option>
+
+                    </select>
+                </th>
+                <th>
+                    Add By Own
+                    <input type="text" name="" id="own6">
+                    <button onclick="abc7()">ADD</button> 
+              </th>
+            </tr>
+            <tr>
+                <th>07</th>
+                <th>EVENING 7:00 pm to 8:00 pm </th>
+                <th>
+                    <select name="" id="select7" oninput="abc1()">
+                        <option value="Select option">Select Option</option>
+                        <option value="RETURN FROM JOB/WORK TIME">RETURN FROM JOB/WORK</option>
+                        <option value="FAMILY TIME">FAMILY TIME</option>
+                        <option value="TV TIME">TV TIME</option>
+                        <option value="DINNER">DINNER</option>
+                        <option value="CHECK WORK PROGRESS">CHECK WORK PROGRESS </option>
+                        <option value="PHONE TIME">PHONE TIME</option>
+
+                    </select>
+                </th>
+                <th>
+                    Add By Own
+                    <input type="text" name="" id="own7">
+                    <button onclick="abc8()">ADD</button>    
+                </th>
+            </tr>
+            <tr>
+                <th>08</th>
+                <th>NIGHT 9:00 pm to 10:00 pm </th>
+                <th>
+                    <select name="" id="select8" oninput="abc1()">
+                        <option value="Select option">Select Option</option>
+                        <option value="RETURN FROM JOB/WORK TIME">RETURN FROM JOB/WORK</option>
+                        <option value="FAMILY TIME">FAMILY TIME</option>
+                        <option value="TV TIME">TV TIME</option>
+                        <option value="DINNER">DINNER</option>
+                        <option value="SLEEP">SLEEP</option>
+                        <option value="PHONE TIME">PHONE TIME</option>
+
+                    </select>
+                </th>
+                <th>
+                    Add By Own
+                    <input type="text" name="" id="own8">
+                    <button onclick="abc9()">ADD</button>                
+                </th>
+            </tr>
+            <tr>
+                <th>09</th>
+                <th>NIGHT 11:00 pm to 12:00 pm </th>
+                <th>
+                    <select name="" id="select9" style="width: 69%;"oninput="abc1()">
+                        <option value="Select option">Select Option</option>
+                        <option value="SLEEP">SLEEP</option>
+                        <option value="WORK TIME">FAMILY TIME</option>
+                        <option value="TV TIME">TV TIME</option>
+                        <option value="SLEEP">SLEEP</option>
+                        <option value="PHONE TIME">PHONE TIME</option>
+                    </select>
+                </th>
+                <th>
+                    Add By Own
+                    <input type="text" name="" id="own9">
+                    <button onclick="abc10()">ADD</button>
+                 </th>
+            </tr>
+        </table>
+    </div><br><br><br><br><br>
+    <div>
+        <table border="2" style="height: auto; width: 70%; background-color: rgba(128, 148, 240, 0.491);margin-left: 10%;">
+            <tr>
+                <th>SR.NO</th>
+                <th>TIME</th>
+                <th>SELECTED ACTIVITIES</th>
+                <th>OWN ACTIVITIES</th>
+                
+            </tr>
+
+            <tr>
+                <th>01</th>
+                <th>
+                <input type="text" name="" id="" value="Morning 7:00 am to 8:00 am" style="width: 70%; text-align: center; border: none; border: 1px solid;"></th>
+                <th id="output1"></th>
+                <th id="owned1"></th>
+            </tr>
+            <tr>
+                <th>02</th>
+                <th>
+                <input type="text" name="" id="" value="Morning 9:00 am to 10:00 am" style="width: 70%; border: 1px solid; text-align: center; "></th>
+                <th id="output2"></th>
+                <th id="owned2"></th>
+            </tr>
+            <tr>
+                <th>03</th>
+                <th>
+                <input type="text" name="" id="" value="Morning 11:00 am to 12:00 am" style="width: 70%; text-align: center; border: 1px solid;"></th>
+                <th id="output3"></th>
+                <th id="owned3"></th>
+            </tr>
+            <tr>
+                <th>04</th>
+                <th>
+                <input type="text" name="" id="" value="NOON 1:00 pm to 2:00 pm	" style="width: 70%; text-align: center; border: 1px solid;"></th>
+                <th id="output4"></th>
+                <th id="owned4"></th>
+            </tr>
+            <tr>
+                <th>05</th>
+                <th>
+                <input type="text" name="" id="" value="NOON 3:00 pm to 4:00 pm	" style="width: 70%; text-align: center; border: 1px solid;"></th>
+                <th id="output5"></th>
+                <th id="owned5"></th>
+
+            </tr>
+            <tr>
+                <th>06</th>
+                <th>
+                <input type="text" name="" id="" value="AFTERNOON 5:00 pm to 6:00 pm" style="width: 70%; text-align: center; border: 1px solid;"></th>
+                <th id="output6"></th>
+                <th id="owned7"></th>
+
+            </tr>
+            <tr>
+                <th>07</th>
+                <th>
+                <input type="text" name="" id="" value="EVENING 7:00 pm to 8:00 pm" style="width: 70%; text-align: center; border: 1px solid;"></th>
+                <th id="output7"></th>
+                <th id="owned7"></th>
+
+            </tr>
+            <tr>
+                <th>08</th>
+                <th>
+                <input type="text" name="" id="" value="NIGHT 9:00 pm to 10:00 pm" style="width: 70%; text-align: center; border: 1px solid;"></th>
+                <th id="output8"></th>
+                <th id="owned8"></th>
+
+            </tr>
+            <tr>
+                <th>09</th>
+                <th>
+                <input type="text" name="" id="" value="NIGHT 11:00 pm to 12:00 pm	" style="width: 70%; text-align: center; border: 1px solid;"></th>
+                <th id="output9"></th>
+                <th id="owned9"></th>
+
+            </tr>
+        </table>
+    </div>
+    <br><br><br>
+
+    <script>
+        function abc1(){
+                 let x = document.getElementById("select1").value;
+                 document.getElementById("output1").innerHTML=x;
+
+                 let x1 = document.getElementById("select2").value;
+                 document.getElementById("output2").innerHTML=x1;
+
+                 let x2 = document.getElementById("select3").value;
+                 document.getElementById("output3").innerHTML=x2;
+
+                 let x3 = document.getElementById("select4").value;
+                 document.getElementById("output4").innerHTML=x3;
+
+                 let x4 = document.getElementById("select5").value;
+                 document.getElementById("output5").innerHTML=x4;
+
+                 let x5 = document.getElementById("select6").value;
+                 document.getElementById("output6").innerHTML=x5;
+
+                 let x6 = document.getElementById("select7").value;
+                 document.getElementById("output7").innerHTML=x6;
+
+                 let x7 = document.getElementById("select8").value;
+                 document.getElementById("output8").innerHTML=x7;
+                 
+
+                 let x8 = document.getElementById("select9").value;
+                 document.getElementById("output9").innerHTML=x8;
+
+                //  let a = document.getElementById("own1").value;
+                //  document.getElementById("owned1").innerHTML=a;
+        }
+        function abc2(){
+            let own1 = document.getElementById("own1").value;
+            document.getElementById("owned1").innerHTML+=own1+"<br>"
+        }
+        function abc3(){
+            let own2 = document.getElementById("own2").value;
+            document.getElementById("owned2").innerHTML+=own2+"<br>";
+        }
+        function abc4(){
+            let own3 = document.getElementById("own3").value;
+            document.getElementById("owned3").innerHTML+=own3+"<br>";
+        }
+        function abc5(){
+            let own4 = document.getElementById("own4").value;
+            document.getElementById("owned4").innerHTML+=own4+"<br>";
+        }
+        function abc6(){
+            let own5 = document.getElementById("own5").value;
+            document.getElementById("owned5").innerHTML+=own5+"<br>";
+        }
+        function abc7(){
+            let own6 = document.getElementById("own6").value;
+            document.getElementById("owned6").innerHTML+=own6+"<br>";
+        }
+        function abc8(){
+            let own7 = document.getElementById("own7").value;
+            document.getElementById("owned7").innerHTML+=own7+"<br>";
+        }
+        function abc9(){
+            let own8 = document.getElementById("own8").value;
+            document.getElementById("owned8").innerHTML+=own8+"<br>";
+        }
+        function abc10(){
+            let own9 = document.getElementById("own9").value;
+            document.getElementById("owned9").innerHTML+=own9+"<br>";
+        }
+        
+    </script>
+</body>
+</html>

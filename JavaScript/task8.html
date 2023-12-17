@@ -1,0 +1,242 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    *{
+        margin: 0;
+        padding: 0;
+    }
+    #main{
+        height: fit-content;
+        width: 80%;
+        background-color: aquamarine;
+        margin-top: 5%;
+        margin-left: 10%;
+    }
+   body{
+    background-image: url(https://img.freepik.com/premium-photo/tranquil-serenity-abstract-teal-hues-blur-light-soothing-background_954894-4980.jpg?size=626&ext=jpg&ga=GA1.1.1880011253.1699747200&semt=ais);
+    background-size: cover;
+   }
+</style>
+<body>
+    <div id="main">
+        <div id="in1">
+            <table border="2" style="height: auto; width: 100%;">
+                <tr>
+                    <th colspan="4">
+                        <h1>MARKS CALCULATOR</h1>
+                    </th>
+                </tr>
+                <tr>
+                    <th colspan="4">PLEASE ENTER YOUR MARKS AND GET YOUR PERCENTAGE </th>
+                </tr>
+                <tr>
+                    <th><h2>SUBJECT</h2></th>
+                    <th><h2>INTERNAL MARKS(/30)</h2></th>
+                    <th><h2>EXAM(/70)</h2></th>
+                    <th><h2>TOTAL</h2></th>
+                </tr>
+                <tr>
+                    <th><h2>ENGLISH</h2></th>
+                    <th><h2>
+                        <input type="number" name="" id="no1"  style="width: 70px; text-align: center; height: 35px; font-size: 25px;">
+                    </h2></th>
+                    <th><h2>
+                        <input type="number" name="" id="no2" style="width: 70px;height: 35px; font-size: 25px;text-align: center;" >
+                    </h2></th>
+                    <th id="no3"></th>
+       
+                </tr>
+                <tr>
+                    <th><h2>SCIENCE</h2></th>
+                    <th><h2>
+                        <input type="number" name="" id="no4"  style="width: 70px; height: 35px; font-size: 25px;text-align: center;">
+                    </h2></th>
+                    <th><h2>
+                        <input type="number" name="" id="no5" style="width: 70px;height: 35px; font-size: 25px;text-align: center;" >
+                    </h2></th>
+                    <th id="no6"></th>
+                </tr>
+                <tr>
+                    <th><h2>MATHS</th>
+                        <th><h2>
+                            <input type="number" name="" id="no7"  style="width: 70px; height: 35px; font-size: 25px;text-align: center;">
+                        </h2></th>
+                        <th><h2>
+                            <input type="number" name="" id="no8" style="width: 70px;height: 35px; font-size: 25px;text-align: center;" >
+                        </h2></th>
+                        <th id="no9"></th>
+
+                </tr>
+                <tr>
+                    <th><h2>SOCIAL SCIENCE</h2></th>
+                    <th><h2>
+                        <input type="number" name="" id="no10"  style="width: 70px; height: 35px; font-size: 25px;text-align: center;">
+                    </h2></th>
+                    <th><h2>
+                        <input type="number" name="" id="no11" style="width: 70px;height: 35px; font-size: 25px;text-align: center;" >
+                    </h2></th>
+                    <th id="no12"></th>
+
+                </tr>
+                <tr>
+                    <th><h2>GUJARATI</h2></th>
+                    <th><h2>
+                        <input type="number" name="" id="no13"  style="width: 70px; height: 35px; font-size: 25px;text-align: center;">
+                    </h2></th>
+                    <th><h2>
+                        <input type="number" name="" id="no14" style="width: 70px;height: 35px; font-size: 25px;text-align: center;" >
+                    </h2></th>
+                    <th id="no15"></th>
+
+                </tr>
+                <tr>
+                    <th><h2>HINDI</h2></th>
+                    <th><h2>
+                        <input type="number" name="" id="no16"  style="width: 70px; height: 35px; font-size: 25px;text-align: center;">
+                    </h2></th>
+                    <th><h2>
+                        <input type="number" name="" id="no17" style="width: 70px;height: 35px; font-size: 25px;text-align: center;" >
+                    </h2></th>
+                    <th id="no18"></th>
+                </tr>
+                <tr>
+                    <th style="height: 40px;"><h2>GRAND TOTAL</h2></th>
+                    <th id="total1"></th>
+                    <th id="total2"></th>
+                    <th id="demo"></th>
+                </tr>
+                <tr>
+                    <th rowspan="3" ><h2>MARKS CALCULATOR</h2></th>
+                    <th id="color1" colspan="2"style="background-color: rgb(210, 81, 81);">&nbsp;&nbsp;&nbsp;
+                    <button onclick="add()" style="height: 50px; background:none; border: none;"><h2>CLICK HERE TO GET YOUR TOTAL MARKS !:)</h2></button>
+                    <th id="sum"></th>
+                        
+                     </th>
+                </tr>
+                <tr>
+                    <th id="color2" colspan="2" style="background-color: rgb(210, 81, 81);">
+                    <button onclick="per()" style="height: 50px;background:none; border: none;"><h2>CLICK HERE TO GET YOUR PERCENTAGE !:)</h2></button>
+                    <th id="sum1"></th>
+
+                </th>
+                </tr>
+                <tr>
+                    <th id="color3" colspan="2" style="background-color: rgb(210, 81, 81);">
+                    <button onclick="gra()" style="height: 50px;background:none; border: none;"><h2>CLICK HERE TO GET YOUR GRADE !:)</h2></button>&nbsp;&nbsp;&nbsp;
+                    <th id="sum2"></th>
+
+                </th>
+                </tr>
+            </table>
+            
+
+        </div>
+        <!-- <input type="reset"> -->
+        <div id="in2">
+        </div>
+    </div>
+    <script>
+        let a = document.getElementById("no1");
+        let b= document.getElementById("no2");
+        let c = document.getElementById("no3");
+        let d= document.getElementById("no4");
+        let e = document.getElementById("no5");
+        let f= document.getElementById("no6"); 
+        let g = document.getElementById("no7");
+        let h= document.getElementById("no8");
+        let i1= document.getElementById("no9");
+        let i2= document.getElementById("no10");
+        let i3= document.getElementById("no11");
+        let i4= document.getElementById("no12");
+        let i5= document.getElementById("no13");
+        let i6= document.getElementById("no14");
+        let i7= document.getElementById("no15");
+        let i8= document.getElementById("no16");
+        let i9= document.getElementById("no17");
+        let i10= document.getElementById("no18");
+
+
+
+
+        function add(){
+        let f1=Number(no1.value)+Number(no2.value);
+        document.getElementById("no3").innerHTML="<h1>"+f1+"</h1>";
+        let f2=Number(no4.value)+Number(no5.value);
+        document.getElementById("no6").innerHTML="<h1>"+f2+"</h1>";
+        let f3=Number(no7.value)+Number(no8.value);
+        document.getElementById("no9").innerHTML="<h1>"+f3+"</h1>";
+        let f4=Number(no10.value)+Number(no11.value);
+        document.getElementById("no12").innerHTML="<h1>"+f4+"</h1>";
+        let f5=Number(no13.value)+Number(no14.value);
+        document.getElementById("no15").innerHTML="<h1>"+f5+"</h1>"; 
+        let f6=Number(no16.value)+Number(no17.value);
+        document.getElementById("no18").innerHTML="<h1>"+f6+"</h1>"; 
+
+       let tot=Number(no1.value)+Number(no4.value)+Number(no7.value)+Number(no10.value)+Number(no13.value)+Number(no16.value);
+       document.getElementById("total1").innerHTML="<h1>"+tot+"</h1>"
+
+       let tot1=Number(no2.value)+Number(no5.value)+Number(no8.value)+Number(no11.value)+Number(no14.value)+Number(no17.value);
+       document.getElementById("total2").innerHTML="<h1>"+tot1+"</h1>"
+
+    //    var tot3= Number(tot.value)+Number(tot1.value);
+       document.getElementById("demo").innerHTML = "<h1>"+(tot + tot1)+"</h1>";
+    document.getElementById("color1").style.background="yellow"
+    document.getElementById("sum").style.background="yellow"
+
+      document.getElementById("sum").innerHTML="<h1>"+(tot + tot1)+"</h1>"
+ }
+
+
+     function per(){
+        let tot=Number(no1.value)+Number(no4.value)+Number(no7.value)+Number(no10.value)+Number(no13.value)+Number(no16.value);
+    //    document.getElementById("total1").innerHTML="<h1>"+tot+"</h1>"
+
+       let tot1=Number(no2.value)+Number(no5.value)+Number(no8.value)+Number(no11.value)+Number(no14.value)+Number(no17.value);
+    //    document.getElementById("total2").innerHTML="<h1>"+tot1+"</h1>"
+        per1=tot+tot1;
+      per=(per1/600)*100;
+      document.getElementById("sum1").innerHTML="<h1>"+(per)+"</h1>"
+      document.getElementById("color2").style.background="pink"
+      document.getElementById("sum1").style.background="pink"
+
+
+    }
+    function gra(){
+        let tot=Number(no1.value)+Number(no4.value)+Number(no7.value)+Number(no10.value)+Number(no13.value)+Number(no16.value);
+    //    document.getElementById("total1").innerHTML="<h1>"+tot+"</h1>"
+
+       let tot1=Number(no2.value)+Number(no5.value)+Number(no8.value)+Number(no11.value)+Number(no14.value)+Number(no17.value);
+    //    document.getElementById("total2").innerHTML="<h1>"+tot1+"</h1>"
+        per1=tot+tot1;
+      per=(per1/600)*100;
+    //   document.getElementById("sum1").innerHTML="<h1>"+(per)+"</h1>"
+
+      if (per>=80 && per<=98){
+              document.getElementById("sum2").innerHTML="<h1>"+"A+"+"</h1>";
+
+    } else if(per>=70 && per<=79){
+             document.getElementById("sum2").innerHTML="<h1>"+"A"+"</h1>";
+
+    }else if(per>=60 && per<=70){
+             document.getElementById("sum2").innerHTML="<h1>"+"B+"+"</h1>"
+
+    }else if(per>=55 && per<=60){
+             document.getElementById("sum2").innerHTML="<h1>"+"B"+"</h1>"
+
+    }else{
+        document.getElementById("sum2").innerHTML="<h1>"+"C"+"</h1>"
+    }
+    document.getElementById("color3").style.background="green"
+    document.getElementById("sum2").style.background="green"
+
+
+    }
+  
+    </script>
+</body>
+</html>

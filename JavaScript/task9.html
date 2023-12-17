@@ -1,0 +1,353 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+    }
+    #main {
+      height: 600px;
+      width: 100%;
+    }
+    #main1 {
+      height: 210px;
+      width: fit-content;
+      border-radius: 10px;
+      background-color: rgba(100, 148, 237, 0.563);
+      position: absolute;
+      top: 10%;
+      left: .5%;
+      border: 2px solid;
+    }
+    #main2 {
+      height: 210px;
+      width: fit-content;
+      border-radius: 10px;
+      background-color: rgba(83, 83, 238, 0.548);
+      position: absolute;
+      top: 10%;
+      left: 34%;
+      border: 2px solid;
+
+    }
+    #main3 {
+      height: 200px;
+      width: fit-content;
+      border-radius: 10px;
+      background-color: rgba(171, 133, 247, 0.577);
+      position: absolute;
+      top: 10%;
+      left: 67%;
+      border: 2px solid;
+
+    }
+    #smain {
+      position: absolute;
+      top: 50%;
+      height: 300px;
+      width: 100%;
+      display: flex;
+    }
+    #smain1 {
+      height: 250px;
+      width: 40%;
+      background-color: rgba(137, 43, 226, 0.438);
+      margin-left: 90px;
+      border-radius: 20px;
+      border: 2px solid;
+    }
+    #smain2 {
+      height: 250px;
+      width: 40%;
+      background-color: rgba(137, 43, 226, 0.445);
+      margin-left: 50px;
+      border-radius: 20px;
+      border: 2px solid;
+    }
+    #in1{
+      color: white;
+      font-size: 100px;
+      font-weight: bolder;
+      text-align: center;
+    }
+    #div{
+      color: white;
+      font-size: 100px;
+      font-weight: bolder;
+      text-align: center;
+    }
+    #div2{
+      color: white;
+      font-size: 100px;
+      font-weight: bolder;
+      text-align: center;
+    }
+    #div3{
+      color: white;
+      font-size: 100px;
+      font-weight: bolder;
+      text-align: center;
+    }
+    #div4{
+      color: white;
+      font-size: 100px;
+      font-weight: bolder;
+      text-align: center;
+    }
+    body{
+      background-image: url(https://media.istockphoto.com/id/1356114754/photo/mutating-virus-variant.jpg?s=612x612&w=0&k=20&c=luDBXJyYbHqsvcGhaJgugkZY-N_pxGXBR0nOw7e7z8M=);
+      background-size: cover;
+    }
+    #heading{
+      height: 40px;
+      width: 95%;
+      border: 2px solid black;
+      margin-left: 2%;
+      border-radius: 10px;
+      margin-top: 10px;
+      text-align: center;
+      background-color: rgba(165, 42, 42, 0.494);
+      color: red;
+    }
+    #tail{
+      height: 40px;
+      width: 95%;
+      border: 2px solid black;
+      margin-left: 2%;
+      border-radius: 10px;
+      margin-top: 10px;
+      text-align: center;
+      background-color: rgba(165, 163, 42, 0.494);
+      font-weight: bolder ;
+    }
+  </style>
+  <body>
+    <div id="main">
+      <div id="heading">
+        <h1>BREAKING CORONA UPDATE INDIA-MARCH(20)</h1>
+      </div>
+      <div id="main1">
+        <table border="1" style="height: 20%; width: 100%;border-radius: 10px;background-color: rgba(127, 255, 212, 0.322);">
+          <tr>
+            <th style="border: none; color:rgb(235, 64, 64);">TOTAL CASES IN MARCH-20</th>
+          </tr>
+          <tr>
+            <th style="border: none; color:rgb(229, 18, 18);font-size: 30px;">GUJARAT</th>
+          </tr>
+        </table>
+
+       <div id="in1"></div>
+       <h2>RISK RATE : <span id="in2"></span> <span>TOTAL CASES : </span> <span id="in3"></span></h2>
+       <th></th>
+      </div>
+
+      <div id="main2">
+        <table border="1" style="height: 20%; width: 100%;border-radius: 10px;background-color: rgba(127, 255, 212, 0.268);">
+          <tr>
+            <th style="border: none; color:rgb(235, 64, 64);">TOTAL CASES IN MARCH-20</th>
+          </tr>
+          <tr>
+            <th style="border: none; color:rgb(229, 18, 18);font-size: 30px;">DELHI</th>
+          </tr>
+        </table>
+
+       <div id="div"></div>
+       <h2>RISK RATE : <span id="in4"></span> <span>TOTAL CASES : </span> <span id="in5"></span></h2>
+       <th></th>
+      </div>
+      <div id="main3">
+        <table border="1" style="height: 20%; width: 100%;border-radius: 10px;background-color: rgba(127, 255, 212, 0.228);">
+          <tr>
+            <th style="border: none; color:rgb(235, 64, 64);">TOTAL CASES IN MARCH-20</th>
+          </tr>
+          <tr>
+            <th style="border: none; color:rgb(229, 18, 18);font-size: 30px;">CHENNAI</th>
+          </tr>
+        </table>
+
+       <div id="div2"></div>
+       <h2>RISK RATE : <span id="in6"></span> <span>TOTAL CASES : </span> <span id="in7"></span></h2>
+       <th></th>
+      </div>
+    </div>
+
+    <div id="smain">
+      <div id="smain1">
+        <table border="1" style="height: 20%; width: 100%;border-radius: 10px;background-color: rgba(127, 255, 212, 0.337);">
+          <tr>
+            <th style="border: none; color:rgb(235, 64, 64);">TOTAL CASES IN MARCH-20</th>
+          </tr>
+          <tr>
+            <th style="border: none; color:rgb(229, 18, 18);font-size: 30px;">MUMBAI</th>
+          </tr>
+        </table>
+
+       <div id="div3"></div>
+       <h2>&nbsp;&nbsp;&nbsp;&nbsp;RISK RATE : <span id="in8"></span>&nbsp;&nbsp;&nbsp;&nbsp; <span>TOTAL CASES : </span> <span id="in9"></span></h2>
+       <h1>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;TOTAL DEATH - <span id="in10"></span></h1>
+      </div>
+      <div id="smain2">
+        <table border="1" style="height: 20%; width: 100%;border-radius: 10px;background-color: rgba(127, 255, 212, 0.235);">
+          <tr>
+            <th style="border: none; color:rgb(235, 64, 64);">TOTAL CASES IN MARCH-20</th>
+          </tr>
+          <tr>
+            <th style="border: none; color:rgb(229, 18, 18);font-size: 30px;">BANGLORE</th>
+          </tr>
+        </table>
+
+       <div id="div4"></div>
+       <h2>&nbsp;&nbsp;&nbsp;&nbsp;RISK RATE : <span id="in11"></span>&nbsp;&nbsp;&nbsp;&nbsp; <span>TOTAL CASES : </span> <span id="in12"></span></h2>
+       <h1>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;TOTAL DEATH - <span id="in13"></span></h1>
+      </div>
+    </div>
+<div id="tail">
+  <h1>PLEASE WEAR MASK AND USE SANITIZER | STAY HOME STAY SAFE :)</h1>
+</div>
+    <script>
+      counts=setInterval(abc);
+      up=0;
+      function abc(){
+        count=document.getElementById("in1").innerHTML=++up;
+        if(up==1260){
+          clearInterval(counts);
+        }
+      }
+      count1=setInterval(def)
+      upto=0;
+      function def(){
+        count=document.getElementById("in2").innerHTML=++upto+"%";
+        if(upto==91){
+          clearInterval(count1);
+        }
+      }
+
+      count2=setInterval(abc1)
+      upto1=0;
+      function abc1(){
+        count=document.getElementById("in3").innerHTML=++upto1;
+        if(upto1==4000){
+          clearInterval(count2);
+        }
+      }
+      
+      count3=setInterval(abc22);
+      up1=0;
+      function abc22(){
+        count=document.getElementById("div").innerHTML=++up1;
+        if(up1==2100){
+          clearInterval(count3);
+        }
+      }
+      count4=setInterval(abc23);
+      up2=0;
+      function abc23(){
+        count=document.getElementById("in4").innerHTML=++up2+"%";
+        if(up2==92){
+          clearInterval(count4);
+        }
+      }
+      count5=setInterval(abc24);
+      up3=0;
+      function abc24(){
+        count=document.getElementById("in5").innerHTML=++up3;
+        if(up3==4100){
+          clearInterval(count5);
+        }
+      }
+      count6=setInterval(abc25);
+      up4=0;
+      function abc25(){
+        count=document.getElementById("div2").innerHTML=++up4;
+        if(up4==2311){
+          clearInterval(count6);
+        }
+      }
+      count7=setInterval(abc26);
+      up5=0;
+      function abc26(){
+        count=document.getElementById("in6").innerHTML=++up5+"%";
+        if(up5==94){
+          clearInterval(count7);
+        }
+      }
+      count8=setInterval(abc27);
+      up7=0;
+      function abc27(){
+        count=document.getElementById("in7").innerHTML=++up7;
+        if(up7==4135){
+          clearInterval(count8);
+        }
+      }
+      count9=setInterval(abc28);
+      up8=0;
+      function abc28(){
+        count=document.getElementById("div3").innerHTML=++up8;
+        if(up8==2401){
+          clearInterval(count9);
+        }
+      }
+      count10=setInterval(abc29);
+      up9=0;
+      function abc29(){
+        count=document.getElementById("in8").innerHTML=++up9+"%";
+        if(up9==97){
+          clearInterval(count10);
+        }
+      }
+      count11=setInterval(abc30);
+      up10=0;
+      function abc30(){
+        count=document.getElementById("in9").innerHTML=++up10;
+        if(up10==4235){
+          clearInterval(count11);
+        }
+      }
+      count12=setInterval(abc31);
+      up11=0;
+      function abc31(){
+        count=document.getElementById("in10").innerHTML=++up11;
+        if(up11==1235){
+          clearInterval(count12);
+        }
+      }
+      count13=setInterval(abc32);
+      up12=0;
+      function abc32(){
+        count=document.getElementById("div4").innerHTML=++up12;
+        if(up12==2501){
+          clearInterval(count13);
+        }
+      }
+      count14=setInterval(abc33);
+      up13=0;
+      function abc33(){
+        count=document.getElementById("in11").innerHTML=++up13+"%";
+        if(up13==97){
+          clearInterval(count14);
+        }
+      }
+      count15=setInterval(abc34);
+      up14=0;
+      function abc34(){
+        count=document.getElementById("in12").innerHTML=++up14;
+        if(up14==4432){
+          clearInterval(count15);
+        }
+      }
+      count16=setInterval(abc35);
+      up15=0;
+      function abc35(){
+        count=document.getElementById("in13").innerHTML=++up15;
+        if(up15==1432){
+          clearInterval(count16);
+        }
+      }
+    </script>
+  </body>
+</html>

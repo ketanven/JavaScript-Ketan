@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    *{
+        margin: 0;
+        padding: 0;
+    }
+    #main{
+        height: 700px;
+        width: 80%;
+        border: 2px solid black;
+        background-color: #00d9ff;
+        margin-left: 10%;
+       
+    }
+    #first{
+        display: flex;
+    }
+    #k1{
+        height: 30px;
+        width: 61.8%;
+        border: 2px solid;
+        position:absolute;
+        top: 113px;
+        left:28.2%;
+    }
+    #k2{
+        height: 30px;
+        width: 100%;
+        border: 2px solid;
+        
+    }
+    #div{
+        height: auto;
+        width: fit-content;
+        background-color: chartreuse;
+        margin-left: 25%;
+        margin-top: 2%;
+    }
+   
+</style>
+<body>
+    <div id="main">
+        <div id="first">
+            <img src="https://www.glsuniversity.ac.in/images/logo_New.jpg" alt="">
+            <h1 style="color:#004789;font-size: 50px;margin-top: 50px;margin-left: 10%;"> GLS UNIVERSITY</h1>
+            <img src="https://upload.wikimedia.org/wikipedia/en/6/6c/GLS_University_logo.png" alt="" style="height: 110px;margin-left: 170px;">
+    </div>
+    <div id="k1">
+        <h1 style="color:#004789;margin-left: 80px;">Result For BCA 2023 SEMESTER-5</h1>
+    </div>
+    <div id="k2" style="display: flex;justify-content: space-around;" >
+        <h2>NAME : UDAY RAJPUT </h2>
+        <h2>ER.NO- 20213090785634</h2>
+        <h2>ROLL NO.57</h2>
+    </div>
+    <table border="1" style="height: 450px; width: 100%;">
+        <tr>
+            <th>SUBJECT</th>
+            <th>FINAL EXAM MARKS(/70)</th>
+            <th>INTERNAL MARKS(/30)</th>
+            <th>TOTAL MARKS(/100)</th>
+        </tr>
+        <tr>
+            <th>CLOUD COMPUTING</th>
+            <th id="a"></th>
+            <th id="b"></th>
+            <th id="c"></th>
+        </tr>
+        <tr>
+            <th>EMERGING TECHNOLOGY</th>
+            <th id="d"></th>
+            <th id="e"></th>
+            <th id="f"></th>
+        </tr><tr>
+            <th>INFORMATION SECURITY</th>
+            <th id="g"></th>
+            <th id="h"></th>
+            <th id="i"></th>
+        </tr><tr>
+            <th>PARTICAL ON PHP</th>
+            <th id="j"></th>
+            <th id="k"></th>
+            <th id="l"></th>
+        </tr>
+        <tr>
+            <th>PHP</th>
+            <th id="m"></th>
+            <th id="n"></th>
+            <th id="o"></th>
+        </tr>
+        <tr>
+            <th>WEB SERVICES</th>
+            <th id="p"></th>
+            <th id="q"></th>
+            <th id="r"></th>
+        </tr>
+        <tr>
+            <th>TOTAL</th>
+            <th id="s"></th>
+            <th id="t"></th>
+            <th id="u"></th>
+        </tr>
+        <tr>
+            <th colspan="3">PRECENTAGE</th>
+            <th id="per"></th>
+        </tr>
+    </table>
+    <div id="div"></div>
+
+
+    <script>
+        a=90;
+        b=26;
+        c=a+b;
+        document.getElementById("a").innerHTML="<h2>"+a+"</h2>";
+        document.getElementById("b").innerHTML="<h2>"+b+"</h2>";
+        document.getElementById("c").innerHTML="<h2>"+c+"</h2>";
+        d=65;
+        e=27;
+        f=d+e;
+        document.getElementById("d").innerHTML="<h2>"+d+"</h2>";
+        document.getElementById("e").innerHTML="<h2>"+e+"</h2>";
+        document.getElementById("f").innerHTML="<h2>"+f+"</h2>";
+        g=80;
+        h=22;
+        i=g+h;
+        document.getElementById("g").innerHTML="<h2>"+g+"</h2>";
+        document.getElementById("h").innerHTML="<h2>"+h+"</h2>";
+        document.getElementById("i").innerHTML="<h2>"+i+"</h2>";
+        j=93;
+        k=29;
+        l=j+k;
+        document.getElementById("j").innerHTML="<h2>"+j+"</h2>";
+        document.getElementById("k").innerHTML="<h2>"+k+"</h2>";
+        document.getElementById("l").innerHTML="<h2>"+l+"</h2>";
+        m=58;
+        n=20;
+        o=m+n;
+        document.getElementById("m").innerHTML="<h2>"+m+"</h2>";
+        document.getElementById("n").innerHTML="<h2>"+n+"</h2>";
+        document.getElementById("o").innerHTML="<h2>"+o+"</h2>";
+        p=10;
+        q=23;
+        r=p+q;
+        document.getElementById("p").innerHTML="<h2>"+p+"</h2>";
+        document.getElementById("q").innerHTML="<h2>"+q+"</h2>";
+        document.getElementById("r").innerHTML="<h2>"+r+"</h2>";
+        s=a+d+g+j+m+p;
+        t=b+e+h+k+n+q;
+        u=s+t;
+        document.getElementById("s").innerHTML="<h2>"+s+"</h2>";
+        document.getElementById("t").innerHTML="<h2>"+t+"</h2>";
+        document.getElementById("u").innerHTML="<h2>"+"600/"+u+"</h2>";
+        per=(u/600)*100;
+        document.getElementById("per").innerHTML="<h2>"+per+"</h2>";
+        if (per>90 && per<99) {
+            document.getElementById("div").innerHTML="<h1>"+"GRADE - A+ EXCELLENT(YOU PASSED)"+"</h2>";
+            
+        } else if(per>80 && per<=90) {
+            document.getElementById("div").innerHTML="<h1>"+"GRADE - A OUTSTANDING(YOU PASSED)"+"</h2>";
+        }
+        else if (per>70 && per<=80){
+            document.getElementById("div").innerHTML="<h1>"+"GRADE - B+ (YOU PASSED)"+"</h2>";
+        }
+        else{
+            document.getElementById("div").innerHTML="FAILED";
+        }
+</script>
+    </div>
+</body>
+</html>

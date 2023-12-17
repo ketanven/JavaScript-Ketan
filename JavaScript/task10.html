@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+    }
+    #main {
+      height: 300px;
+      width: 50%;
+      background-color: rgba(127, 255, 212, 0.742);
+      margin-top: 10%;
+      margin-left: 25%;
+    }
+  </style>
+  <body>
+    <div id="main">
+      <form action="">
+        <h1>
+          PASSWORD :
+          <input style="height: 30px" type="password" name="" id="one" />
+          <span id="sp1"></span>
+        </h1>
+        <h1>
+          PASSWORD :
+          <input style="height: 30px" type="password" name="" id="two" />
+          <span id="sp2"></span>
+        </h1>
+      </form>
+      <input type="submit" name="" onclick="abc()" />
+      <h1 id="demo"></h1>
+    </div>
+    <script>
+      function abc() {
+        let x = document.getElementById("one").value;
+        let y = document.getElementById("two").value;
+        let a = document.getElementById("sp1").value;
+        let b = document.getElementById("sp2").value;
+
+        if (x && y && x === y) {
+          document.getElementById("demo").innerHTML = "correct";
+        } else {
+          document.getElementById("demo").innerHTML = "incorrect";
+        }
+        if(x==""){
+            document.getElementById("sp1").innerHTML="insert password"
+        }
+        if(y==""){
+            document.getElementById("sp2").innerHTML="insert passsword"
+        }
+        else{
+
+        }
+      }
+    </script>
+  </body>
+</html>

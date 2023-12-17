@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Add Option Example</title>
+  
+</head>
+<style>
+    *{
+        margin: 0;
+        padding: 0;
+    }
+    .div1{
+        height: 100px;
+        width: 30%;
+        background-color: aqua;
+        text-align: center;
+        padding-top: 40px;
+        margin-top: 20%;
+        margin-left: 35%;
+    }
+    body{
+        background-color: rgba(127, 255, 212, 0.482);
+    }
+</style>
+<body>
+    <div class="div1">
+  <label for="optionInput">Enter Option:</label>
+  <input type="text" id="optionInput">
+  <button onclick="addOption()">Add Option</button>
+<br>
+<label for="optionSelect">Select Options:</label>
+  <select id="optionSelect"></select>
+  </div>
+<script>
+    function addOption() {
+      var inputValue = document.getElementById("optionInput").value;
+
+      // Get the select element
+      var selectElement = document.getElementById("optionSelect");
+
+      // Create a new option element
+      var newOption = document.createElement("option");
+
+      // Set the value of the new option
+      newOption.value = inputValue;
+
+      // Set the text of the new option
+      newOption.text = inputValue;
+
+      // Add the new option to the select element
+      selectElement.add(newOption);
+
+      // Clear the input field
+      document.getElementById("optionInput").value = "";
+    }
+  </script>
+</body>
+</html>
