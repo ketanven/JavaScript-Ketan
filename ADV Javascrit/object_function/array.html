@@ -1,0 +1,51 @@
+<script>
+
+
+var arr1=["C","C++","Python"];  
+var arr2=["Java","JavaScript","Android"];  
+var result=arr1.concat(arr2);  
+document.writeln(result+"<br>");
+
+
+
+
+var arr3 = ["ketan","uday","bharart"];
+var itr = arr3.entries();
+for(var e of itr){
+    document.write(e+"<br>")
+}
+
+
+var marks = [50,30,40,29,40];
+function check(value){
+    return value>10;
+}
+document.write(marks.every(check)+"<br>");
+
+
+var marks = [22,33,[33,44,55],77,88,[22,44]];
+var newArr = marks.flat();
+document.write(newArr+"<br>");
+
+
+var arr=["AngularJS","Node.js","JQuery"];  
+var result=arr.fill("Bootstrap");  
+document.writeln(arr + "</br>");  
+
+
+var arr=["AngularJS","Node.js","JQuery"];  
+var result=arr.fill("Bootstrap",0,2);  
+document.writeln(arr + "</br>"); 
+
+
+var arr=Array.from("You are viewing an example of string"); //The string will get converted to an array.  
+document.write("The resultant is: <br>" + arr  + "</br>"); 
+
+var marks =[22,66,77,88,44,33,55];
+function check(value){
+    return value>30;
+}
+document.write(marks.filter(check)+"<br>")
+
+
+</script>

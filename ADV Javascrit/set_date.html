@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <!--
+
+Date()
+
+setDate()
+setFullYear()
+setMonth()
+
+
+setHours();
+setMinutes();
+setSeconds();
+
+
+-->
+    <br /><br /><br /><br /><br />
+    <h2 id="setdate"></h2>
+    <h2 id="setfullyear"></h2>
+    <h2 id="setmonth"></h2>
+
+    <h2 id="sethour"></h2>
+    <h2 id="setmin"></h2>
+    <h2 id="setsec"></h2>
+  </body>
+  <script>
+    let a = new Date();
+
+    a.setDate(23);
+    document.getElementById("setdate").innerHTML = a;
+
+    a.setFullYear(2012);
+    document.getElementById("setfullyear").innerHTML = a;
+
+    a.setMonth(11);
+    document.getElementById("setmonth").innerHTML = a;
+
+    a.setHours(12);
+    document.getElementById("sethour").innerHTML = a;
+
+    a.setMinutes(20);
+    document.getElementById("setmin").innerHTML = a;
+
+    a.setSeconds(50);
+    document.getElementById("setsec").innerHTML = a;
+  </script>
+</html>

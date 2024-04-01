@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+
+    <h1 id="text1"></h1>
+    <h1 id="text2"></h1>
+    <h1 id="text3"></h1>
+    <h1 id="text4"></h1>
+
+</body>
+<script>
+    var x=20;
+    var y=22;
+    function check(x,y){
+        return x/y;
+    }
+
+    document.writeln(Number.isInteger(check(12,2))+"<br>");
+    document.getElementById("text1").innerHTML=(Number.isFinite(check(0,10)));
+    document.getElementById("text2").innerHTML=(Number.isFinite(check(10,0)));
+    document.getElementById("text3").innerHTML=(Number.isInteger(check(12,2)));
+    document.getElementById("text4").innerHTML=(Number.isInteger(check(1,12))+"<br>");
+
+   var a ="50.00rs";
+   var b = "string"
+   var c ="50string"
+   var d ="50.25string"
+
+   document.writeln(Number.parseFloat(a)+"<br>");
+   document.writeln(Number.parseFloat(b)+"<br>");
+   document.writeln(Number.parseFloat(c)+"<br>");
+   document.writeln(Number.parseFloat(d)+"<br>");
+
+
+   document.writeln(Number.parseInt(a)+"<br>");
+   document.writeln(Number.parseInt(b)+"<br>");
+   document.writeln(Number.parseInt(c)+"<br>");
+   document.writeln(Number.parseInt(d)+"<br>");
+
+  
+   var a =123445566;
+   document.writeln(a.toExponential()+"<br>");
+
+   var b = 998833.3344;
+   document.writeln(b.toFixed()+"<br>");
+   document.writeln(b.toFixed(2)+"<br>");
+
+   var c=98.129938;
+   document.writeln(c.toPrecision()+"<br>");
+
+
+   var d= 55;
+   var e = -22;
+   var f = 50.24;
+   document.writeln(d.toString()+"<br>");
+   document.writeln(e.toString()+"<br>");
+   document.writeln(f.toString()+"<br>");
+
+</script>
+</html>

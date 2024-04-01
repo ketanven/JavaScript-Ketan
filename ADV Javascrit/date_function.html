@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <h1 id="date"></h1>
+    <h1 id="date1"></h1>
+    <h1 id="date2"></h1>
+    <h1 id="date3"></h1>
+    <h1 id="date4"></h1>
+    <h1 id="date5"></h1>
+  </body>
+  <script>
+    const d = new Date();
+
+    let text1 = d.toLocaleDateString();
+    document.getElementById("date").innerHTML = text1;
+
+    let text4 = d.toLocaleTimeString();
+    document.getElementById("date1").innerHTML = text4;
+
+    let text5 = d.toLocaleString();
+    document.getElementById("date2").innerHTML = text5;
+
+    let text3 = d.toDateString();
+    document.getElementById("date3").innerHTML = text3;
+
+    let text6 = d.toISOString();
+    document.getElementById("date4").innerHTML = text6;
+
+    let text7 = d.toJSON();
+    document.getElementById("date5").innerHTML = text7;
+  </script>
+</html>

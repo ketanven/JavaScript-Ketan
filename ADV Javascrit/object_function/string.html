@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>Lorem ipsum dolor sit amet consectetur adipisicing elit. Autem voluptate perspiciatis error exercitationem ipsa, ipsam aliquid porro animi asperiores soluta voluptatem maxime! Iure quis distinctio hic nesciunt aliquid minus mollitia.</h1>
+</body>
+<script>
+    var str = "javapoint";
+
+    document.writeln(str.charAt(4)+"<br>");
+    document.writeln( "<h1>"+str.charAt()+"</h1><br>");
+    document.writeln(str.charAt(str.length-4)+"<br>");
+
+    var x="javaScript";
+    var y=".com";
+
+    document.writeln(x.concat(y)+"<br>");
+    document.writeln("<h1>"+(x)+(y)+"</h1><br>");
+    document.writeln((x)+"hi hello"+"<br>");
+
+    var a= "Learn JavaScript on Javatpoint";
+    document.writeln(a.indexOf("a")+"<br>");
+    document.writeln(a.indexOf("a",9)+"<br>");
+
+    document.writeln(a.lastIndexOf("a")+"<br>");
+
+
+    var b = "JavaScript is a scripting language. Scripting languages are often interpreted"
+
+
+    document.writeln(b.search("scripting")+"<br>");
+
+    document.writeln(b.search(/Scripting/)+"<br>");
+ 
+    document.writeln(b.search(/Scripting/i)+"<br>");
+
+   var s = "helojavapoint";
+   document.writeln(s.match(/java/gi));
+
+   var str=" Learn Node.js on Javatpoint. Node.js is a well-known JavaScript framework.";
+   
+   document.writeln(str.replace(/Node.js/g,"Angular JS"));
+
+   document.writeln(str.replace(/Node.js/gi,"Angular JS")+"<br>");
+
+   var str2 = "JavaScript";
+   document.writeln(str2.substr(0,5)+"<br>");
+
+   var str = "JavaScript";
+   document.writeln(str.substr(5,5)+"<br>");
+
+   var str = "JavaScript";
+   document.writeln(str.substr(5)+"<br>");
+
+
+   var filename="ketan.jpg";
+   var ext = filename.substring(filename.lastIndexOf(".")+1+"<br>");
+
+   if(!(ext == "jpg")){
+    document.writeln("invalid file selected"+"<br>")
+   }
+
+
+   var str = "javascript and html"
+
+   document.writeln(str.slice(2,5)+"<br>");
+   document.writeln(str.slice(0)+"<br>");
+   document.writeln(str.slice(5)+"<br>");
+   document.writeln(str.slice(-5)+"<br>");
+   document.writeln(str.slice(-5,-1)+"<br>");
+
+  var str = "JAVATPOINT";
+
+  document.writeln("<h1>"+str.toLowerCase()+"</h1><br>")
+
+  var str = "javapointttttt";
+
+  document.writeln("<h1>"+str.toUpperCase()+"</h1><br>")
+</script>
+</html>

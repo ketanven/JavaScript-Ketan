@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1 id="demo"></h1>
+    <h1 id="time"></h1>
+</body>
+<script>
+    setTimeout(abc,5000);
+    function abc(){
+        document.getElementById("demo").innerHTML="HAPPY BIRTHDAY";
+    }
+
+    setInterval(xyz,1000);
+    function xyz(){
+        let a = new Date();
+        let b = (a.getHours()+":"+a.getMinutes()+":"+a.getSeconds());
+        document.getElementById("time").innerHTML=b;
+    }
+</script>
+</html>

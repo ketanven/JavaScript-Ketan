@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>
+        Lorem ipsum dolor sit, amet consectetur adipisicing elit. Sit sunt eos est voluptates nulla vel, neque nam deleniti debitis corporis laudantium enim perspiciatis quo inventore animi officia harum iste vitae expedita at tempora. Expedita, minus. Doloremque voluptas architecto minima laboriosam rerum quo commodi? Sequi magni corporis tempora culpa fuga odio.
+    </h1>
+
+    
+</body>
+<script>
+    function abc(a,b,c,d){
+        document.write("SUM IS : ",a+b+c+d)
+    }
+    abc(12,12,13,13);
+
+    document.write("<br><br>")
+
+
+    function xyz(...data){
+        for (var i =0;i<data.length;i++){
+            document.write(data[i]+"<br>")
+        }
+    }
+
+    xyz(1,2,3,4,5,6,7,8,9,11)
+    xyz(11,22,33,44,55)
+
+    document.write("<br><br>")
+
+
+    function fun1(){
+        for( var i=0;i<arguments.length;i++){
+            document.write(arguments[i]+"<br>")
+        }
+    }
+    fun1(12,13,14,11,12,13,122,1)
+</script>
+</html>

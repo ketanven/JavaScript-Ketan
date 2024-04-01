@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div>
+        <center>
+            <h1>Enter your Code
+            </h1>
+            <input type="text" onkeyup="submit()" name="" id="upcase">
+        </center>
+        <hr>
+        <center>
+            <h1>Enter your Marks
+            </h1>
+                <label for="">hindi
+                    <input type="text" name="" id="hindi">
+                </label><br><br><br>
+                <label for="">gujarati
+                    <input type="text" name="" id="gujarati">
+                </label><br><br><br>
+                <label for="">english
+                    <input type="text" name="" id="english">
+                </label><br><br><br>
+
+                <button onclick="result()">submit</button>
+                <h1 id="result22"></h1>
+
+        </center>
+    </div>
+</body>
+<script>
+function submit(){
+    document.getElementById("upcase").style.textTransform="uppercase"
+}
+
+
+function result(){
+    let a= +document.getElementById("hindi").value;
+    let b = +document.getElementById("gujarati").value;
+    let c= +document.getElementById("english").value;
+
+    let result = a+b+c;
+
+    let per = (result*100)/300;
+
+    if(per<40){
+    document.getElementById("result22").innerHTML="YOUR TOTAL MARKS IS :   "+result+"   AND YOUR PERCENTAGE IS :   "+per+"   GRADE = FAIL";
+    document.getElementById("result22").style.color="red";
+    }
+    else if(per>40 && per<=60){
+    document.getElementById("result22").innerHTML="YOUR TOTAL MARKS IS :  "+result+"  AND YOUR PERCENTAGE IS :  "+per+"  GRADE = PASS";
+    document.getElementById("result22").style.color="blue";
+    }
+    else if(per>60 && per<=80){
+    document.getElementById("result22").innerHTML="YOUR TOTAL MARKS IS :   "+result+"   AND YOUR PERCENTAGE IS :  "+per+"  GRADE = FIRST CLASS";
+    document.getElementById("result22").style.color="yellow";
+    }
+    else{
+    document.getElementById("result22").innerHTML="YOUR TOTAL MARKS IS :  "+result+"  AND YOUR PERCENTAGE IS :  "+per+"  GRADE = DIST CLASS";
+    document.getElementById("result22").style.color="green";
+    }
+
+
+}
+</script>
+</html>

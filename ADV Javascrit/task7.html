@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <input type="submit" value="click me" ondblclick="submit()" name="" id="">
+    <h1 id="big">This is style given by javascript function
+    </h1>
+    <label for="">Enter name: 
+        <input onkeyup="text2()" type="text" name="" id="demo">
+    </label>
+    <input type="submit" name="" id="submit1"><br>
+     <button onclick="entername()">Try it</button>
+    <h3 id="upercase">hello world</h3>
+
+</body>
+<script>
+    function submit(){
+       document.getElementById("big").setAttribute("style","font-size:100px;font-style:italic;color:red")
+    }
+
+  function text2(){
+    document.getElementById("demo").setAttribute("style", "color:red; background-color:yellow; text-transform:uppercase");
+  }
+
+    function entername(){
+        let a = document.getElementById("upercase").innerHTML;
+        document.getElementById("upercase").innerHTML=a.toUpperCase();
+    }
+
+
+
+</script>
+</html>

@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <input type="submit" value="dbclickme" ondblclick="clickme()" name="" id="">
+    <h1 id="firstinp" style="color: red;">This is style given by javascript function</h1>
+    <img src="logo.png" id="img" onmouseover="oninmouse()" onmouseout="mouseout()" alt="">
+
+</body>
+
+<script>
+    function clickme(){
+        document.getElementById("firstinp").style.fontSize="50px";
+        document.getElementById("firstinp").style.color="yellow";
+        document.getElementById("firstinp").style.backgroundColor="darkblue";
+    }
+    function oninmouse(){
+        document.getElementById("img").style.width="500px";
+        document.getElementById("img").style.border="2px solid"
+    }
+
+    function mouseout(){
+        document.getElementById("img").style.width="300px";
+        document.getElementById("img").style.border="none";
+    }
+</script>
+</html>

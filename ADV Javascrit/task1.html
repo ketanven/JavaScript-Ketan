@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <input type="submit" value="+" name="" id="" onclick="add()">
+    <span id="test">1</span>
+    <input type="submit" value="-" name="" id="" onabort="sub()">
+    <br><br><br>
+
+    <div class="container">
+        <input type="submit" value="+" onclick="plus1()">
+        <input type="text" id="demo" value="1" min="0">
+        <input type="submit" value="-" onclick="minus1()">
+    </div>
+</body>
+<script>
+    function add()
+{
+	var value=document.getElementById('test').innerHTML;
+	value++;
+	document.getElementById('test').innerHTML=value;
+}	
+function sub()
+{
+	var value=document.getElementById('test').innerHTML;
+	value--;
+	document.getElementById('test').innerHTML=value;
+}	
+
+function plus1(){
+    var a =document.getElementById("demo").value;
+    a++;
+    document.getElementById("demo").value=a;
+}
+function minus1(){
+    var b=document.getElementById("demo").value;
+    b--;
+    if(b>0){
+        document.getElementById("demo").value=b;
+    }
+}
+</script>
+</html>
